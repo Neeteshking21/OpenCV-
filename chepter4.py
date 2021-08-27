@@ -11,6 +11,6 @@ cv2.rectangle(img, (0,200), (200, 400), (0,0,255), cv2.FILLED)   #(src, start, e
 cv2.circle(img, (400, 100), 100, (255,200,28), 2)       #(src, center, radious, color, thickness/cv2.FILLED)
 cv2.putText(img, "Hello, Neetesh", (20,300), cv2.FONT_HERSHEY_COMPLEX, 6, (0, 255, 80 ),2)  #(src, text, start, font, font_scale, color, thickness  )
 
-cv2.imshow("Zeros", img )
+cv2.imshow("Zeros", img )   
 
 cv2.waitKey(0)
