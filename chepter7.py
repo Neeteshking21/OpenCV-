@@ -6,6 +6,10 @@ import numpy as np
 def empty(a):
     pass
 
+cap = cv2.VideoCapture(1)
+cap.set(3,400)
+cap.set(4,400)
+cap.set(10,150)
 
 cv2.namedWindow('TrackBars')
 cv2.resizeWindow('TrackBars', 640,240)
@@ -18,7 +22,7 @@ cv2.createTrackbar('Val max', 'TrackBars', 255, 255, empty)
 
 while True:
 
-    img = cv2.imread('src/dp.jpg')
+    success, img = cap.read(0)
     imgHSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
     h_min = cv2.getTrackbarPos('Hue min', 'TrackBars')
