@@ -5,7 +5,7 @@ import numpy as np
 
 faceCascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # change height
 cap.set(3, 640)
